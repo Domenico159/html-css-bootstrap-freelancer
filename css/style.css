@@ -29,7 +29,7 @@
 
 /* box */
 .box{
-    max-height: 300px;
+    max-height: 350px;
     border-radius: 20px;
     margin-bottom: 40px;
 }
@@ -37,7 +37,7 @@
 /* Img */
 .hero img{
     max-width: 100%;
-    max-height: 300px;
+    max-height: 350px;
     border-radius: 10px;
 }
 
