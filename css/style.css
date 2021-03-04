@@ -1,6 +1,27 @@
 
 /* Utilytis */
 
+.color-w{
+    color: #fff;
+}
+
+.text-up{
+    text-transform: uppercase;
+}
+
+.f-big{
+    font-size: 56px;
+    font-weight: 700;
+}
+
+/* STAR */
+.fa, .fas {
+    font-size: 30px;
+    vertical-align: middle;
+    margin: 15px 30px;
+}
+/* END STAR */
+
 /* Color text and background */
 .bg-green{
     background-color: #1abc9c;
@@ -11,20 +32,69 @@
 }
 
 /* Header-top navbar */
-.header-top{
+.header-top .navbar{
+    border: none;
+}
+
+.header-top .navbar-brand{
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 80px;
+    padding: 0 15px;
+    transition: background 0.3s;
     height: 80px;
+}
+
+.header-top .navbar-nav>li>a{
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 80px;
+    padding: 0 15px;
+    transition: background 0.3s;
+}
+
+/* Header-top navbar hover*/
+.header-top .navbar-nav>li>a:hover{
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.header-top .navbar-brand:hover{
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #fff;
 }
 
 /* Header-bottom-profile */
 .header-bottom{
-    height: 300px;
+    height: 700px;
+    padding-top: 180px;
+}
+
+.header-bottom .profile img{
+    max-width: 20%;
+    max-height: 20%;
 }
 
 /* Main hero */
-
+.header-bottom .line{
+    display: inline-block;
+    max-width: 150px;
+    height: 5px;
+    background-color: #fff;
+    border-radius: 10px;
+}
 /* Portfolio */
+
+.portfolio .line{
+    display: inline-block;
+    width: 200px;
+    height: 5px;
+    background-color: #2c3d50;
+    border-radius: 10px;
+}
+
 .portfolio{
-    height: 100px;
+    height: 150px;
 }
 
 /* box */
