@@ -1,6 +1,8 @@
 
 /* Utilytis */
-
+.navbar-toggle{
+    margin-top: 20px;
+}
 .color-w{
     color: #fff;
 }
@@ -29,6 +31,10 @@
 
 .bg-blue{
     background-color: #2c3d50;
+}
+
+.color-b{
+    color: #3a546d;
 }
 
 /* Header-top navbar */
@@ -78,18 +84,19 @@
 /* Main hero */
 .header-bottom .line{
     display: inline-block;
-    max-width: 150px;
-    height: 5px;
+    width: 100%;
+    max-width: 7rem;
+    height: 0.25rem;
     background-color: #fff;
     border-radius: 10px;
 }
 /* Portfolio */
-
-.portfolio .line{
+.hero .line{
     display: inline-block;
-    width: 200px;
-    height: 5px;
-    background-color: #2c3d50;
+    width: 100%;
+    max-width: 7rem;
+    height: 0.25rem;
+    background-color: #333;
     border-radius: 10px;
 }
 
@@ -116,9 +123,66 @@
     height: 400px;
 }
 
+.about .line{
+    display: inline-block;
+    width: 100%;
+    max-width: 7rem;
+    height: 0.25rem;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.mybtn{
+    border: 1px solid #fff;
+    color: #fff;
+}
+.fas.fa-download{
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    padding-right: 10px;
+}
+
 /* Contact me hero */
 .contact{
     height: 500px;
+}
+
+.contact input[type="text"],
+.contact input[type="username"],
+.contact input[type="email"],
+.contact .container .row textarea[class="form-control"]{
+    border-radius: 0;
+    border: 0;
+    border-bottom: 1px solid #aaa;
+    box-shadow: none;
+}
+
+.contact .btn.btn-default.btn-sub{
+    margin-top: 15px;
+}
+
+.contact input[type="text"]::placeholder,
+.contact input[type="username"]::placeholder,
+.contact input[type="email"]::placeholder,
+.contact .container .row textarea[class="form-control"]::placeholder{
+    color: #5d6a78;
+}
+
+/* Active */
+.contact input[type="text"]:focus,
+.contact input[type="username"]:focus,
+.contact input[type="email"]:focus,
+.contact .container .row textarea[class="form-control"]:focus{
+    box-shadow: 1px 1px 10px rgba(47, 211, 203, 0.6);
+}
+/* Hover */
+.contact input[type="text"]:hover,
+.contact input[type="username"]:hover,
+.contact input[type="email"]:hover,
+.contact .container .row textarea[class="form-control"]:hover{
+    border-bottom: 1px solid rgb(37, 37, 37);
+    cursor: pointer;
 }
 
 /* Footer */
@@ -128,7 +192,52 @@
     height: 200px;
     background-color: #3a546d;
 }
+
+.footer-top .row ul li{
+    display: inline-block;
+    margin: 0 5px ;
+    list-style: none;
+}
+
+.footer-top .row ul li a{
+    font-size: 16px;
+    color: #fff;
+    padding: 20px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+}
+
 /* Footer-bottom */
 .footer-bottom{
     height: 100px;
+}
+
+@media screen and (min-width:345px) and (max-width:580px){
+    .f-big{
+        font-size: 30px;
+    }
+}
+@media screen and (min-width:0px) and (max-width:345px){
+    .f-big,
+    .header-bottom h3,
+    .header-top .navbar-brand{
+        font-size: 20px;
+    }
+    .fa, .fas {
+        font-size: 20px;
+        margin-left:10px ;
+        margin-right:10px ;
+    }
+    .header-bottom .line,
+    .hero .line{
+        max-width: 30%;
+    }
+
+
+    @media screen and (min-width:0px) and (max-width:345px){
+    .header-bottom .line,
+    .hero .line{
+        max-width: 10%;
+    }
+}
 }
