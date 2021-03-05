@@ -143,6 +143,7 @@ html {
 }
 .box-img{
     position: relative;
+    transition: transform 0.5s;
 }
 
 .box-img .fas.fa-plus{
@@ -340,7 +341,7 @@ html {
     .header-top .navbar-brand{
         font-size: 20px;
     }
-    .fa, .fas {
+    .fa-star{
         font-size: 20px;
         margin-left:10px ;
         margin-right:10px ;
