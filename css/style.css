@@ -1,6 +1,7 @@
 /* General */
 html {
     scroll-behavior: smooth;
+    scroll-padding: 80px;
   }
 
 /* Utilytis */
@@ -162,6 +163,7 @@ html {
 .box-img:hover .fas.fa-plus{
     opacity: 1;
     transform: translate(-80%,-60%);
+    cursor: pointer;
 }
 
 
@@ -178,9 +180,10 @@ html {
     background-color: #1abc9c;
     opacity: 0;
     transition: opacity 0.3s;
+    cursor: pointer;
 }
 .hero .box-img:hover .overlay{
-    opacity: 0.6;
+    opacity: 0.8;
 }
 /* Abount-hero */
 .about{
