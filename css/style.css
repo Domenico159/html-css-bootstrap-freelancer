@@ -1,3 +1,7 @@
+/* General */
+html {
+    scroll-behavior: smooth;
+  }
 
 /* Utilytis */
 .navbar-toggle{
@@ -90,6 +94,10 @@
     transition: background 0.3s;
     transition: border 0.2s;
     border-bottom: 5px solid transparent;
+}
+.header-top .navbar-nav>li>a:focus,
+.header-top .navbar-brand:focus{
+    color: #fff;
 }
 
 /* Header-top navbar hover*/
