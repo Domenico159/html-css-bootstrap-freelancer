@@ -154,6 +154,11 @@ html {
     padding: 30px;
 }
 
+.about .row p{
+    font-size: 20px;
+    font-weight: 500;
+}
+
 .mybtn{
     border: 1px solid #fff;
     color: #fff;
@@ -220,6 +225,7 @@ html {
     transition: color 0.3s;
     transition: border 0.2s;
     transition: background 0.3s;
+    padding: 10px 20px;
 }
 
 .contact .btn.btn-default.btn-sub:hover{
@@ -250,13 +256,22 @@ html {
     margin:20px 5px 20px 0px
 }
 
-.footer-top .row ul li a{
+.footer-top .row ul li a {
     font-size: 18px;
     color: #fff;
     padding: 15px;
     border-radius: 50%;
     border: 1px solid #fff;
 }
+.footer-top .row ul li a .fab.fa-facebook-f{
+    padding-right:5px;
+    padding-left: 5px;
+}
+.footer-top .row ul li a .fab.fa-linkedin-in{
+    padding-right:2px;
+    padding-left: 2px;
+}
+
 
 .footer-top .row ul li a:hover{
     background-color: rgba(245, 243, 243,0.4);
