@@ -16,6 +16,21 @@
     font-weight: 700;
 }
 
+.line-w{
+    display: inline-block;
+    width: 15%;
+    height: 5px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+.line-b{
+    display: inline-block;
+    width: 15%;
+    height: 5px;
+    background-color: #333;
+    border-radius: 10px;
+}
+
 /* STAR */
 .fa, .fas {
     font-size: 30px;
@@ -48,7 +63,7 @@
     line-height: 80px;
     padding: 0 15px;
     transition: background 0.3s;
-    height: 80px;
+    min-height: 80px;
 }
 
 .header-top .navbar-nav>li>a{
@@ -72,7 +87,7 @@
 
 /* Header-bottom-profile */
 .header-bottom{
-    height: 700px;
+    min-height: 700px;
     padding-top: 180px;
 }
 
@@ -82,26 +97,12 @@
 }
 
 /* Main hero */
-.header-bottom .line{
-    display: inline-block;
-    width: 100%;
-    max-width: 7rem;
-    height: 0.25rem;
-    background-color: #fff;
-    border-radius: 10px;
-}
+
 /* Portfolio */
-.hero .line{
-    display: inline-block;
-    width: 100%;
-    max-width: 7rem;
-    height: 0.25rem;
-    background-color: #333;
-    border-radius: 10px;
-}
+
 
 .portfolio{
-    height: 150px;
+    min-height: 150px;
 }
 
 /* box */
@@ -120,16 +121,7 @@
 
 /* Abount-hero */
 .about{
-    height: 400px;
-}
-
-.about .line{
-    display: inline-block;
-    width: 100%;
-    max-width: 7rem;
-    height: 0.25rem;
-    background-color: #fff;
-    border-radius: 10px;
+    min-height: 400px;
 }
 
 .mybtn{
@@ -189,20 +181,28 @@
 
 /* Footer-top */
 .footer-top{
-    height: 200px;
+    min-height: 200px;
     background-color: #3a546d;
 }
 
 .footer-top .row ul li{
     display: inline-block;
-    margin: 0 5px ;
     list-style: none;
+    margin-right: 10px;
 }
 
-.footer-top .row ul li a{
+.footer-top .row ul li a i{
+    font-size: 18px;
+    color: #fff;
+    padding: 15px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+}
+
+.footer-top .row ul li a .fab.fa-facebook-f{
     font-size: 16px;
     color: #fff;
-    padding: 20px;
+    padding: 15px 20px;
     border-radius: 50%;
     border: 1px solid #fff;
 }
@@ -233,11 +233,4 @@
         max-width: 30%;
     }
 
-
-    @media screen and (min-width:0px) and (max-width:345px){
-    .header-bottom .line,
-    .hero .line{
-        max-width: 10%;
-    }
-}
 }
