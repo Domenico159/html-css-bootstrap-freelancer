@@ -146,30 +146,21 @@ html {
 
 .box-img .fas.fa-plus{
     position: absolute;
-    top: 100%;
+    top: 50%;
     left: 50%;
-    transform: translate(-80%,-60%);
+    transform: translate(-80%,10%);
     font-size: 100px;
     font-weight: 900;
     text-transform: uppercase;
     opacity: 0;
     transition: opacity 0.3s;
+    transition: transform 0.5s;
 }
 
 .box-img:hover .fas.fa-plus{
     opacity: 1;
-    animation: plus-in 0.5s forwards;
+    transform: translate(-80%,-60%);
 }
-
-@keyframes plus-in{
-    from{
-        top:100%
-    }
-    to{
-        top:50%
-    }
-}
-
 
 .overlay{
     transition: opacity 0.3s;
@@ -332,6 +323,12 @@ html {
 }
 .footer-bottom .container h5{
     line-height: 20px;
+}
+
+@media screen and (min-width:345px) and (max-width:580px){
+    .f-big{
+        font-size: 30px;
+    }
 }
 
 @media screen and (min-width:345px) and (max-width:580px){
