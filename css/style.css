@@ -228,6 +228,10 @@
     background-color: #3a546d;
     padding: 30px;
 }
+
+.footer-top .small-text{
+    font-size: 20px;
+}
 .footer-top .row ul{
     padding: 0;
 }
@@ -248,6 +252,10 @@
 
 .footer-top .row ul li a:hover{
     background-color: rgba(245, 243, 243,0.4);
+}
+
+.footer-top a{
+    color: #1abc9c;
 }
 
 /* Footer-bottom */
