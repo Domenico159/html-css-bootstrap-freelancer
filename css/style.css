@@ -121,8 +121,8 @@ html {
 }
 
 .header-bottom .profile img{
-    max-width: 20%;
-    max-height: 20%;
+    max-width: 50%;
+    max-height: 50%;
 }
 
 /* Main hero */
@@ -131,8 +131,6 @@ html {
     padding-bottom: 60px;
 }
 /* Portfolio */
-
-
 .portfolio{
     min-height: 150px;
     padding: 30px;
