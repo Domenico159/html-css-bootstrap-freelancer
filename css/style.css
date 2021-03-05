@@ -140,6 +140,40 @@ html {
     border-radius: 20px;
     margin-bottom: 40px;
 }
+.box-img{
+    position: relative;
+}
+
+.box-img .fas.fa-plus{
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-80%,-60%);
+    font-size: 100px;
+    font-weight: 900;
+    text-transform: uppercase;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.box-img:hover .fas.fa-plus{
+    opacity: 1;
+    animation: plus-in 0.5s forwards;
+}
+
+@keyframes plus-in{
+    from{
+        top:100%
+    }
+    to{
+        top:50%
+    }
+}
+
+
+.overlay{
+    transition: opacity 0.3s;
+}
 
 /* Img */
 .hero img{
@@ -147,7 +181,17 @@ html {
     max-height: 350px;
     border-radius: 10px;
 }
-
+.overlay{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    background-color: #1abc9c;
+    opacity: 0;
+}
+.hero .box-img:hover .overlay{
+    opacity: 0.6;
+}
 /* Abount-hero */
 .about{
     min-height: 400px;
