@@ -125,7 +125,10 @@ html {
 }
 
 /* Main hero */
-
+.hero .content{
+    padding: 30px;
+    padding-bottom: 60px;
+}
 /* Portfolio */
 
 
@@ -136,9 +139,7 @@ html {
 
 /* box */
 .box{
-    max-height: 350px;
-    border-radius: 20px;
-    margin-bottom: 40px;
+    padding: 10px;
 }
 .box-img{
     position: relative;
@@ -162,15 +163,11 @@ html {
     transform: translate(-80%,-60%);
 }
 
-.overlay{
-    transition: opacity 0.3s;
-}
 
 /* Img */
 .hero img{
-    max-width: 100%;
-    max-height: 350px;
     border-radius: 10px;
+    width: 100%;
 }
 .overlay{
     position: absolute;
@@ -179,6 +176,7 @@ html {
     border-radius: 10px;
     background-color: #1abc9c;
     opacity: 0;
+    transition: opacity 0.3s;
 }
 .hero .box-img:hover .overlay{
     opacity: 0.6;
